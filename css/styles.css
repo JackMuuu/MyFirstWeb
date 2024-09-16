@@ -70,7 +70,7 @@ nav ul{
     margin-top: 80px;
     width: calc(220px + 4vw); 
     background-color: rgb(12, 12, 12);
-    height: calc(100vh); 
+    height: calc(100%); 
     position: fixed;
     padding-top: calc(6vh);
     text-align: left;
