@@ -259,7 +259,7 @@ main {
 /* All 4 bulletpoints */
 .bullet{
     width: 5%; 
-    height: fit-content; 
+    height: 5%; 
     margin-left: calc(7vw);
     padding-top: calc(2vh);
 }
