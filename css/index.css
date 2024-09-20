@@ -8,14 +8,12 @@ body {
     font-family: Arial, Lato, Calibri, sans-serif;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     background-image: url('../img/sunset_mountain.jpg');
     background-size:cover; 
     background-position: center; 
     background-repeat: no-repeat;
-    height: calc(100vh + 25vw + 80px);
+    height: calc(100vh + 25vw + 65px);
     position:relative;
-    /* margin: 0 40px; */
 }
 
 
@@ -29,12 +27,11 @@ header {
     top:0;
     width: 100%;
     z-index: 10;
-    height: 80px;
+    height: 65px;
     opacity: 80%;
 }
 
 header h1{
-    margin-top: 0.5vw;
     text-align: center;
     font-size: calc(30px);
     font: 'Lato';
@@ -48,30 +45,22 @@ header p{
 }
 
 
-
-
-
 /* Flexbox Container for nav and main */
 .content-container {
     display: flex;
     flex-direction: row;
-    /* min-height: calc(100vh);  */
-    height:calc(100vh + 25vw + 80px);
+    height:calc(100vh + 25vw + 65px);
 }
-
-
-
-
 
 
 
 /* Default nav for Laptop and Larger Screens */
 
 nav ul{
-    margin-top: 80px;
+    margin-top: 65px;
     width: calc(220px + 4vw); 
     background-color: rgb(12, 12, 12);
-    height: calc(100% - 80px); 
+    height: calc(100% - 65px); 
     position: fixed;
     padding-top: calc(6vh);
     text-align: left;
@@ -136,15 +125,13 @@ nav ul li a {
 
 
 
-
-
 /* Main content for laptop and larger screens */
 main {
     /* padding: 20px; */
     height: calc(100vh + 25vw); 
     position: relative;
     flex-grow:1;
-    margin-top: 80px;
+    margin-top: 65px;
     margin-left: calc(220px + 4vw);
     background-color: rgba(0, 0, 0, 0);
     display: flex;
@@ -290,18 +277,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* The footer part */
 footer {
     font-family: 'Lato';
@@ -320,33 +295,88 @@ footer {
 
 
 
-
-
-
-
 /* Responsive Sidebar for Mobile and Tablet (max-width: 750px) */
 
 
-/* @media (max-width: 750px) {
-    nav {
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 0;
+@media (max-width: 750px) {
+
+    header {
+        padding: 2px 0;
+        height: 50px;
+        opacity: 80%;
+    }
+    
+    header h1{
+        font-size: 26px;
+    }
+    
+    header p{
+        font-size: 10.5px;
+    }
+
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        height:calc(100vh + 25vw + 50px);
+    }
+
+    #me, #senior, #cv, #msg{
+        display: none;
+    }
+
+    #home{
+        margin-top: 0;
     }
 
     nav ul{
-        display: inline;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        height: 30px;
+        padding: 0;
+        width: 100%;
+        margin-top: 50px;
+        z-index: 10;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        opacity: 80%;
     }
+
+    nav ul li a {
+        padding: calc(1px + 0.5vw);
+        text-align: center;
+        font-size: 18px;
+        display:flex;
+        flex-direction: row;
+    }
+
+    .nav{
+        font-size: calc(8px + 0.2vw + 0.2vh);
+        border: none;
+        text-align: center;
+
+    }
+
+    .content-container i{
+        display: none;
+    }
+
+
 
     main {
         margin-left: 0; 
-        height: auto;
+        position:relative;
     }
 
-    nav a {
-        padding: 15px;
-        text-align: center;
-        font-size: 18px;
+    .resume-body {
+        height: calc(80vh + 25vw);
     }
-} */
+
+    footer {
+        font-size: calc(8px + 0.5vh);
+        padding: 8px 0;
+        height: 30px;
+    }    
+}

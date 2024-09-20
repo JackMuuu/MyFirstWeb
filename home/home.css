@@ -211,3 +211,87 @@ footer {
     opacity: 80%;
     z-index: 10;
 }
+
+@media (max-width: 750px) {
+
+    header {
+        padding: 2px 0;
+        height: 50px;
+        opacity: 80%;
+    }
+    
+    header h1{
+        font-size: 26px;
+    }
+    
+    header p{
+        font-size: 10.5px;
+    }
+
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        height:calc(100vh + 25vw + 50px);
+    }
+
+    #me, #senior, #cv, #msg{
+        display: none;
+    }
+
+    #home{
+        margin-top: 0;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        height: 30px;
+        padding: 0;
+        width: 100%;
+        margin-top: 50px;
+        z-index: 10;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        opacity: 80%;
+    }
+
+    nav ul li a {
+        padding: calc(1px + 0.5vw);
+        text-align: center;
+        font-size: 18px;
+        display:flex;
+        flex-direction: row;
+    }
+
+    .nav{
+        font-size: calc(8px + 0.2vw + 0.2vh);
+        border: none;
+        text-align: center;
+
+    }
+
+    .content-container i{
+        display: none;
+    }
+
+
+
+    main {
+        margin-left: 0; 
+        height: auto;
+        position:relative;
+    }
+
+    .resume-body {
+        height: calc(80vh + 25vw);
+    }
+
+    footer {
+        font-size: calc(8px + 0.5vh);
+        padding: 8px 0;
+        height: 30px;
+    }    
+}
